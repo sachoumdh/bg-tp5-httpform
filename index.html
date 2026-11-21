@@ -8,13 +8,16 @@
 
     <body>
         <div class="container">
+
             <!-- Red Header -->
              <header class="header">
                 <h1> 🎬 CinéPass </h1>
                 <p>Inscription au Club de Cinéma - Saison 2025 </p>
              </header>
 
-             <form>
+             <form class="form">
+
+                <!-- Warning Message -->
                 <div class="warning">
                     <p>
                         💡 Rejoignez notre club et profitez de tarifs réduits, d'avant-premières 
@@ -22,9 +25,85 @@
                     </p>
                 </div>
 
-                <div class="info">
-                    <h2 id="text">
+                <!-- 1st form section -->
+                <div class="form-section">
+                    <h2>
                         👤 Informations personnelles 
+                    </h2>
+
+                    <div class="form-grid">
+
+                        <div class="champ">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="Prenom"> Prénom :</label>
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="text" placeholder="Ex: Ahmed"/>
+                        </div>
+
+                        <div class="champ">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="Nom"> Nom :</label> 
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="text" placeholder="Ex: Bensalem"/> 
+                        </div>
+
+                        <div class="champ-full">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="email"> Adresse email:</label>
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="email" placeholder="votre.email@exemple.com"/> 
+                        </div>
+
+                        <div class="champ-full">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="password"> Mot de passe (compte en ligne):</label>
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="password" placeholder="Minimum 8 caractères" minlength="8"/> 
+                        </div>
+
+                        <div class="champ">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="telephone"> Téléphone: </label>
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="telephone" placeholder="0555123456" maxlength="10"/> 
+                        </div>
+
+                        <div class="champ">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="date"> Date de naissance: </label>
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="date" id="date" name="myDate" min="2026-11-16" max="2030-12-31"/> 
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 2nd form section -->
+                <div class="form-section">
+                    <h2>
+                        🎫 Formule d'abonnement 
+                    </h2>
+                </div>
+
+                <!-- 3rd form section -->
+                <div class="form-section">
+                    <h2>
+                        🎥 Vos préférences cinématographiques
+                    </h2>
+                </div>
+
+                <!-- 4th form section -->
+                <div class="form-section">
+                    <h2>
+                        📅 Disponibilité et préférence
+                    </h2>
+                </div>
+
+                <!-- 5th form section -->
+                <div class="form-section">
+                    <h2>
+                        📎 Documents et informations complémentaires
                     </h2>
                 </div>
 

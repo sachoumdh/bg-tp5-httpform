@@ -1,11 +1,15 @@
+/* General page style */ 
 body{
-    font-family: Calibri Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #0C143E;
 }
 
+/* The content of the page (header + form) */
 .container{
     background-color: white;
-    margin: 20px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
     margin-bottom: 20px;
     border-top-left-radius: 25px; 
     border-top-right-radius: 25px;
@@ -14,7 +18,7 @@ body{
 }
 
 /* Header Style */
-.header {
+.header{
     background-color: #FF0033DD;
     color: white;
     text-align: center;
@@ -24,32 +28,90 @@ body{
 }
 
 /* Warning Message Style */
-.warning {
+.warning{
     background-color: #f7ecca;
     color: #7E6C04;
-    padding: 10px;
+    padding: 5px;
     margin: 40px 40px 0px 40px;
     border-radius: 10px;
     border-left: 4px solid orange;
 }
 
+.warning p{
+    margin-left: 10px;
+}
+
+/* General Form position in the page body */
+.form{
+    padding: 15px;
+}
+
 /* Personal Informations Style */
-.info{
-    background-color: rgb(242, 237, 237);
-    color: grey;
+.form-section{
+    background-color: #F2EDED;
+    color: rgb(46, 44, 44);
     padding: 10px;
     margin: 20px 40px 10px 40px;
     border-radius: 10px;
-    border-left: 4px solid rgb(255, 42, 74);
+    border-left: 4px solid #FF2A4A;
 }
 
-#text{
+/* Text (Informations Personnelles) Style */
+.form-section h2{
     color: black;
-    margin: 0px 0px 0px 10px;
+    margin-left: 20px;
 }
 
+/* Organization of fields */
+.form-grid{
+    display: grid; /* The elements are organized in a grid */
+    grid-template-columns: 1fr 1fr; /* Two columns of the same width */
+    gap: 15px 0px;
+    margin-bottom: 30px;
+}
+
+/* For the fields that take up half of the page */
+.champ{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* For the fields that take up the whole page */
+.champ-full {
+    grid-column: 1 / -1; 
+    margin-left: 10px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Style */
+.champ label, .champ-full label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #444;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* Innput Style */
+.champ input, .champ-full input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 7px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* Submit Button Style */
 .button button{
-    background-color: rgb(255, 42, 74);
+    background-color: #FF2A4A;
     color: white;
     border: none;
     border-radius: 50px;
@@ -60,6 +122,7 @@ body{
     margin: 30px 0;
 }
 
+/* Center Button */
 .button{
     text-align: center;
 }
