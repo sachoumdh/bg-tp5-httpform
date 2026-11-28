@@ -120,6 +120,43 @@ body{
     margin-right: 20px;
 }
 
+.fieldset { 
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+/* Fieldset border */
+.fieldset fieldset {
+    box-sizing: border-box;
+    width: 95%;
+    border: 2px solid  #ddd;
+    border-radius: 20px;
+    margin-left: 20px;
+    
+}
+
+.fieldset legend {
+    font-weight: bold;
+    color: #FF2A4A ;
+    margin-left: 20px;
+}
+
+.fieldset label, .fieldset input {
+    display: flex;
+    align-items: center ;
+    background-color: white;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    margin: 5px 0px 0px 0px;
+    padding: 10px 15px;
+}
+
+.fieldset input[type="radio"] {
+    margin-right: 8px;
+}
+
 /* Submit Button Style */
 .button button{
     background-color: #FF2A4A;

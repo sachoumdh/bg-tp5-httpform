@@ -87,6 +87,54 @@
                     <h2>
                         <span class="abonnement-icon">🎫</span> Formule d'abonnement 
                     </h2>
+
+                    <div class="form-grid">
+
+                        <div class="fieldset">
+                            <fieldset>
+                                <legend> Choisissez votre formule : </legend>
+                                <label for="basique"> <input type="radio" id="basique"/> 
+                                                      <span class="abonnement-icon">🥉</span> 
+                                                      Basique - 4 séances/mois (2000 DA/mois) 
+                                </label> </br></br>
+                                                   
+                                <label for="basique"> <input type="radio" id="basique"/>
+                                                      <span class="abonnement-icon">🥈</span> 
+                                                      Premium - 10 séances/mois (4500 DA/mois) 
+                                </label> </br></br>
+  
+                                <label for="basique"> <input type="radio" id="basique"/>
+                                                      <span class="abonnement-icon">🥇</span> 
+                                                      Illimité - Séances illimitées (7000 DA/mois) 
+                                </label> </br></br>
+                            </fieldset>
+                        </div>
+
+                        <div class="champ">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="date"> Date de début souhaité : </label>
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="date" id="date" name="myDate" placeholder="--------- ----"/> 
+                        </div>
+
+                        <div class="champ">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="duree"> Durée d'engagement :</label> 
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input list="navigateurs" placeholder="-- Sélectionner --"/>
+                              <datalist id="navigateurs">
+                                <option value="option 1"/>
+                                <option value="option 1" />
+                              </datalist>
+                        </div> 
+                        
+                        <div class="champ-full">
+                           <!-- Adding Saisie Slide de reference : 82 - Chapitre 5 -->
+                           <label for="nbaccomp"> Nombre d'accompagnants habituels :</label>
+                           <!-- Adding Fieldset Slide de reference : 86 - Chapitre 5 -->
+                           <input type="number" placeholder="0" min="0" max="10"/> 
+                        </div>
+                    </div>
                 </div>
 
                 <!-- 3rd form section -->
