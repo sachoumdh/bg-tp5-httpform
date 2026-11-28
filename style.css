@@ -108,7 +108,7 @@ body{
     margin-right: 20px;
 }
 
-/* Innput Style */
+/* Input Style */
 .champ input, .champ-full input {
     box-sizing: border-box;
     width: 100%;
@@ -128,20 +128,35 @@ body{
 /* Fieldset border */
 .fieldset fieldset {
     box-sizing: border-box;
-    width: 95%;
+    width: 96.5%;
     border: 2px solid  #ddd;
     border-radius: 20px;
     margin-left: 20px;
-    
+    padding-top: 20px;  
 }
 
+/* Fieldset Title */
 .fieldset legend {
     font-weight: bold;
     color: #FF2A4A ;
     margin-left: 20px;
 }
 
-.fieldset label, .fieldset input {
+/* Label Texte Style ( the white rectangles of the options) */
+.fieldset label {
+    display: flex;
+    align-items: center ;
+    background-color: white;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 10px 15px;
+    margin-bottom: -20px;
+}
+
+/* White Input Zone */
+.fieldset input {
     display: flex;
     align-items: center ;
     background-color: white;
@@ -150,11 +165,13 @@ body{
     border-radius: 7px;
     font-size: 14px;
     margin: 5px 0px 0px 0px;
-    padding: 10px 15px;
+    padding: 10px 15px;    
 }
 
+/* Radio Button Style */
 .fieldset input[type="radio"] {
     margin-right: 8px;
+    accent-color: #FF2A4A; /* To change the color of the active circle */
 }
 
 /* Submit Button Style */
