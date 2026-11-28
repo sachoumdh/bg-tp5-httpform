@@ -19,12 +19,23 @@ body{
 
 /* Header Style */
 .header{
+    position: relative;
+    overflow: hidden ; /* Cut off the part of the icon that sticks out of the header */
     background-color: #FF0033DD;
     color: white;
     text-align: center;
     padding: 25px;
     border-top-left-radius: 25px; 
     border-top-right-radius: 25px;
+}
+
+/* Cinema icon in the header */
+.cinema-icon {
+    position: absolute; /* Used to display the icon */
+    right: -35px; /* Moving the icon to the rignt */
+    top: -55px; /* Moving the icon to the top */
+    font-size: 210px;
+    color: rgba(120, 0, 30, 0.25);
 }
 
 /* Warning Message Style */
